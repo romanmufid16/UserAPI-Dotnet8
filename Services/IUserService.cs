@@ -7,5 +7,7 @@ namespace UserAPI_Dotnet8.Services
         Task<UserResponseDTO> RegisterAsync(RegisterUserDTO dto);
 
         Task<UserResponseDTO?> GetByIdAsync(int id);
+
+        Task<string> LoginAsync(LoginUserDTO dto);
     }
 }
